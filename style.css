@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+/* Sidebar style */
+.sidebar {
+    width: 243px;
+    min-height: 100vh;
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 1;
+
+}
+
+.body-container {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.logo-container {
+    height: 70px;
+    width: 100%;
+    text-align: center;
+    margin: 40px 0 40px 0;
+    border-bottom: 0.2px rgb(228, 224, 224) solid;
+}
+
+.logo-container:hover {
+    cursor: pointer;
+}
+
+.menu-container {
+    margin-top: 40px;
+    margin: 40px 12px 0 12px;
+}
+
+.list-group {
+    list-style-type: none;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    padding: 12px 0 12px 24px;
+    font-size: 1rem;
+    font-family: Gilroy-Medium;
+    color: #767676;
+    border-radius: 8px;
+}
+
+.menu-item:hover {
+    color: #1CD2AD;
+    background-color: rgba(28, 210, 173, 0.1);
+}
+
+.menu-item:active {
+    color: #049175;
+}
+
+.menu-item:hover .logo-size {
+    fill: #1CD2AD;
+    color: #1CD2AD;
+}
+
+.bottom-menu-container {
+    padding: 30px 12px 20px 12px;
+    bottom: 0;
+    border-top: 0.2px rgb(228, 224, 224) solid;
+
+}
+
+/* Body Style */
+
+.body-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #F5F5F5;
+    overflow-y: auto
+}
+
+.top-back-container {
+    background-color: rgba(18, 30, 72, 1);
+    height: 245px;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 32px;
+    padding: 0 20px 0 20px;
+    width: 100%;
+}
+
+.Welcome-container {
+    font-size: 1.5rem;
+    font-family: Gilroy-Medium;
+}
+
+#robert {
+    color: rgba(28, 210, 173, 1);
+}
+
+.search-notification-container {
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+}
+
+.searchbar {
+    min-width: 214px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px 16px 10px 16px;
+    border-radius: 100px;
+    color: #fff;
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    position: relative;
+}
+
+.notification-section {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    position: relative;
+}
+
+.search-input {
+    position: absolute;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 5px 0 5px 5px;
+
+}
+
+.avatar-container {
+    width: 40px;
+    height: 40px;
+}
+
+.avatar-container>img {
+    filter: brightness(150%);
+    cursor: pointer;
+}
+
+.finace-overview {
+    position: absolute;
+    padding: 0 20px 0 20px;
+    width: 100%;
+}
+
+.finace-heading {
+    color: white;
+    margin-top: 125px;
+    font-family: Gilroy-Bold;
+}
+
+.card-overview {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 2rem;
+    margin-right: 30px;
+}
+
+.card-item {
+    background-color: #ffffff;
+    height: 116px;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+
+}
+
+.card-text {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: Gilroy-Bold;
+    padding: 20px 0 0 20px;
+    gap: 8px;
+}
+
+.projects-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+
+.button-container>button {
+    padding: 10px 15px 10px 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #1CD2AD;
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-family: Gilroy-Semibold;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+    cursor: pointer;
+}
+
+
+/* Table style */
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    overflow-x: auto;
+    overflow-x: scroll;
+}
+
+th,
+td {
+    border: none;
+    padding: 15px;
+    text-align: left;
+}
+
+td {
+    font-family: Gilroy-Semibold;
+    color: #8E90A6;
+    font-size: 1rem;
+}
+
+th {
+    font-family: Gilroy-Medium;
+    border-bottom: 1px solid #AAAAAA;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #F9FBFB;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: white;
+}
+
+tbody tr[status="PAID"] {
+    background-color: #63d667;
+}
+
+tbody tr[status="REJECTED"] {
+    background-color: #db5d6a;
+}
+
+
+
+
+/* Styles for the popup form */
+
+.overlay {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    align-items: center;
+    justify-content: center;
+}
+
+.popup {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 50vw;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.close {
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #767676;
+    right: 0;
+    background-color: #F5F5F5;
+    display: flex;
+    align-self: flex-end;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+
+.form-elements {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 10px;
+}
+
+.form-elements>input {
+    outline: none;
+    border: none;
+    padding: 10px;
+    background-color: #F9FBFB;
+    font-size: 1.3rem;
+    color: #595858;
+    border-radius: 10px;
+}
+
+
+/* Events Container */
+
+.events-container {
+    background-color: #ffffff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px 24px 20px 24px;
+    width: 40vw;
+    font-family: Gilroy-Semibold;
+    font-style: italic;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.event-list-container{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.event-item-container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    gap: 20px;
+}

@@ -1,0 +1,80 @@
+@font-face {
+    font-family: Gilroy-black;
+    src: url(./assets/fonts/Gilroy-Black.ttf)format('truetype');
+}
+
+@font-face {
+    font-family: Gilroy-bold;
+    src: url(./assets/fonts/Gilroy-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: Gilroy-ExtraBold;
+    src: url(./assets/fonts/Gilroy-ExtraBold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: Gilroy-Heavy;
+    src: url(./assets/fonts/Gilroy-Heavy.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: Gilroy-Light;
+    src: url(./assets/fonts/Gilroy-Light.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: Gilroy-Medium;
+    src: url(./assets/fonts/Gilroy-Medium.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: Gilroy-SemiBold;
+    src: url(./assets/fonts/Gilroy-SemiBold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: Gilroy-Thin;
+    src: url(./assets/fonts/Gilroy-Thin.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: Gilroy-UltraLight;
+    src: url(./assets/fonts/Gilroy-UltraLight.ttf) format('truetype');
+}
+
+
+
+/* Media query */
+@media screen and (max-width: 768px) {
+
+    .sidebar {
+        position: fixed;
+        left: 0;
+        left: -243px;
+    }
+
+    .profile-container {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .popup {
+        width: 100%;
+        margin: 10px;
+    }
+
+    .card-overview {
+        grid-template-columns: repeat(2, 1fr);
+        margin-right: 0;
+    }
+
+    table {
+        overflow-x: auto;
+
+    }
+
+    .events-container {
+        width: 100%;
+    }
+}
